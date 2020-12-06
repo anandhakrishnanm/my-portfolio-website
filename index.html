@@ -9,9 +9,8 @@
     <!--Linking Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Linking JS-->
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <!--Linking jquary-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,17 +20,17 @@
                 <a href="#home" class="site-logo">Anandhu</a>
         
                 <!--nav items -->
-                <ul class="nav-items">
-                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <ul class="nav-items" id="nav-list">
+                  <li class="nav-item "><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#">Project</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#">Contact</a></li>
                 </ul>
         
                 <!-- nav-toggler for mobile version only -->
-                <button class="nav-toggler">
-                  <span></span>
-                </button>
+                <div class="menu-btn" id="menuBtn">
+                  <div class="menu-btn__burger"></div>
+                </div>
               </nav>
               <!-- navbar-area end -->
               <div class="welcome-box" id="home">
@@ -44,7 +43,7 @@
             </div>
           </div>
           
-          
+          <!--About section-->
           <section class="about-section section" id="about">
              
              <div class="about-content">
