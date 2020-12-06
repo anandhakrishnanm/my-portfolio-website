@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+$navbar-text-color: #fff;
+$navbar-text-underline-color: gold;
+$welcome-area-bg-image-overlay-color: rgba(0, 0, 0, 0.6);
+$cv-btn-hover-color: rgb(255, 147, 6);
+$about-section-background-color: rgb(177, 177, 177);
+$heading-text-color-about: #425066;
+$text-color-about: #161616;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.section{
+    padding-top: 15vh;
+}
+@mixin flex-align($jc,$ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+/*Nav bar styling*/
+.navbar{
+    @include flex-align(space-between,center);
+    height: 10vh;
+    background-color: $welcome-area-bg-image-overlay-color;
+    position: fixed;
+    width: 100%;
+}
+.navbar a{
+    text-decoration: none;
+    color: $navbar-text-color;
+    font-size: 2.5rem;
+}
+.nav-items{
+    @include flex-align(space-evenly,center);
+    width: 55vw;
+}
+.nav-link{
+    position: relative;
+}
+a.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    margin-top: 8px;
+    background-color: $navbar-text-underline-color;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.6s ease-in-out;
+  }
+  a.nav-link:hover:before {
+    visibility: visible;
+    margin-top: 8px;
+    transform: scaleX(1);
+  }
+  
+.nav-item{
+    list-style: none;
+}
+.site-logo{
+    margin-left: 20px;
+}
+.nav-toggler{
+    display: none;
+}
+@media screen and (max-width:750px){
+    .navbar{
+        height: 12vh;
+    }
+}
+/*nav bar styling end*/
+/*welcome area styling*/
+.welcome-area{
+    background-image: url('..//images/welcome-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+// .welcome-area:before {
+//     content: "";
+//     position: absolute;
+//     left: 0; right: 0;
+//     top: 0; bottom: 0;
+//     background: $welcome-area-bg-image-overlay-color;
+//   }
+  .welcome-box{
+      @include flex-align(center,center );
+      height: 100vh;
+      width: 100%;
+      color: $navbar-text-color;
+      background: $welcome-area-bg-image-overlay-color;
+      font-weight: 800px;
+    //   padding: 20px;
+    //   border-left: 4px solid $navbar-text-color;
+  }
+  .welcome-word{
+      font-size: 3rem;
+  }
+  .welcome-name{
+      font-size: 6rem;
+  }
+  .welcome-job{
+      font-size: 4rem;
+  }
+  .cv-btn {
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid $navbar-text-underline-color;
+    color: $navbar-text-color;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    transition-duration: 0.7s;
+  }
+  .cv-btn:hover {
+    border: 2px solid $cv-btn-hover-color; 
+  }
+  .welcome-text{
+      padding: 20px;
+      border-radius: 20px;
+  }
+/*welcome area styling end*/
+/*about section style*/
+.about-section{
+    height: 100vh;
+    width: 100%;
+    background: url('..//images/triangle-mosaic.png');
+}
+.about-heading{
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    color: $heading-text-color-about;
+}
+.dev-image{
+    width: 50rem;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.about-content{
+    @include flex-align(flex-start,center )
+}
+.about-text-div{
+    padding-left: 60px;
+    color: $text-color-about;
+    width: 55rem;
+
+}
+.about-intro{
+    font-size: 3rem;
+}
+.about-job{
+    font-size: 2.8rem;
+}
+.about-info{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.about-phone, .about-email{
+    @include flex-align(flex-start,center);
+    margin-top: 10px;
+}
+.contact-mob,.contact-email{
+    margin-left: 20px;
+    font-size: 1.8rem;
+    color: $heading-text-color-about;
+}
+.contact-email a{
+    color: $heading-text-color-about;
+    text-decoration: none;
+}
+.my-social-presence{
+    margin-top: 12px;
+    @include flex-align(flex-start,center )
+}
+.i-git,.i-linked-in,.i-twitter{
+    color: $heading-text-color-about;
+}
+.i-linked-in,.i-twitter{
+    margin-left: 15px;
+}
+.about-head-box{
+    @include flex-align(flex-start,center)
+}
+.i-git{
+    color: #333;
+}
+.i-linked-in{
+    color:#0E76A8;
+}
+.i-twitter{
+    color: #1DA1F2;
+}
+  
+/*about section styling end*/
