@@ -99,8 +99,8 @@ a.nav-link:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 40px;
   margin-right: 20px;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
@@ -109,8 +109,8 @@ a.nav-link:hover:before {
 }
 
 .menu-btn__burger {
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -123,8 +123,8 @@ a.nav-link:hover:before {
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -163,7 +163,7 @@ a.nav-link:hover:before {
 
 @media screen and (max-width: 1100px) {
   .navbar {
-    height: 12vh;
+    height: 10vh;
     width: 100vw;
   }
   html {
@@ -189,8 +189,8 @@ a.nav-link:hover:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 85vh;
-    top: 12vh;
+    height: 100vh;
+    top: 10vh;
     left: 0;
     width: 0;
     background: #000;
@@ -241,6 +241,7 @@ a.nav-link:hover:before {
 
 .welcome-word {
   font-size: 3rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .welcome-name {
@@ -249,6 +250,7 @@ a.nav-link:hover:before {
 
 .welcome-job {
   font-size: 4rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .cv-btn {
@@ -283,7 +285,15 @@ a.nav-link:hover:before {
     width: 85vw;
   }
   .welcome-name {
+    font-size: 3.5rem;
+    margin: 15px auto;
+  }
+  .welcome-word {
+    font-size: 2.5rem;
+  }
+  .welcome-job {
     font-size: 3rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -440,7 +450,17 @@ a.nav-link:hover:before {
     margin-top: 20px;
     padding-left: 5vw;
   }
+  .navbar {
+    background: #161616;
+  }
 }
 
 /*about section styling end*/
+/*project section styling*/
+.project-section {
+  height: 100vh;
+  width: 100%;
+}
+
+/*project section styling end*/
 /*# sourceMappingURL=style.css.map */

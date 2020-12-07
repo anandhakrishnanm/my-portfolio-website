@@ -6,6 +6,7 @@ $cv-btn-hover-color: rgb(255, 147, 6);
 $about-section-background-color: rgb(177, 177, 177);
 $heading-text-color-about: #425066;
 $text-color-about: #161616;
+$mob-welcome-text-faded-color: rgba(255, 255, 255, 0.8);
 *{
     margin: 0px;
     padding: 0px;
@@ -77,16 +78,16 @@ a.nav-link:before {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 40px;
     margin-right: 20px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     /* border: 3px solid #fff; */
   }
   .menu-btn__burger {
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 4px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -96,8 +97,8 @@ a.nav-link:before {
   .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 4px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -122,7 +123,7 @@ a.nav-link:before {
   }
 @media screen and (max-width:1100px){
     .navbar{
-        height: 12vh;
+        height: 10vh;
         width: 100vw;
     }
     html{
@@ -135,8 +136,8 @@ a.nav-link:before {
         position: fixed;
         @include flex-align(center,center );
         flex-direction: column;
-        height: 85vh;
-        top:12vh;
+        height: 100vh;
+        top:10vh;
         left:0;
         width: 0;
         background: #000;
@@ -165,13 +166,7 @@ a.nav-link:before {
     background-size: cover;
     background-attachment: fixed;
 }
-// .welcome-area:before {
-//     content: "";
-//     position: absolute;
-//     left: 0; right: 0;
-//     top: 0; bottom: 0;
-//     background: $welcome-area-bg-image-overlay-color;
-//   }
+
   .welcome-box{
       @include flex-align(center,center );
       height: 100vh;
@@ -179,17 +174,17 @@ a.nav-link:before {
       color: $navbar-text-color;
       background: $welcome-area-bg-image-overlay-color;
       font-weight: 800px;
-    //   padding: 20px;
-    //   border-left: 4px solid $navbar-text-color;
   }
   .welcome-word{
       font-size: 3rem;
+      color: $mob-welcome-text-faded-color;
   }
   .welcome-name{
       font-size: 6rem;
   }
   .welcome-job{
       font-size: 4rem;
+      color: $mob-welcome-text-faded-color;
   }
   .cv-btn {
     margin-top: 15px;
@@ -219,8 +214,16 @@ a.nav-link:before {
           width: 85vw;
       }
       .welcome-name{
-          font-size: 3rem;
+          font-size: 3.5rem;
+          margin: 15px auto;
       }
+      .welcome-word{
+        font-size: 2.5rem;
+    }
+    .welcome-job{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
   }
 /*welcome area styling end*/
 /*about section style*/
@@ -316,5 +319,14 @@ a.nav-link:before {
         padding-left: 5vw;
     
     }
+    .navbar{
+        background: $text-color-about;
+    }
   }
 /*about section styling end*/
+/*project section styling*/
+.project-section{
+    height: 100vh;
+    width: 100%;
+}
+/*project section styling end*/
