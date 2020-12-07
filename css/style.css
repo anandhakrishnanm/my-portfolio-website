@@ -31,7 +31,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000;
   position: fixed;
   width: 100%;
 }
@@ -40,6 +40,11 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 2.5rem;
+}
+
+.svg-logo {
+  width: 12rem;
+  background-color: #fff;
 }
 
 .nav-items {
@@ -451,7 +456,7 @@ a.nav-link:hover:before {
     padding-left: 5vw;
   }
   .navbar {
-    background: #161616;
+    background: #000;
   }
 }
 
@@ -460,6 +465,25 @@ a.nav-link:hover:before {
 .project-section {
   height: 100vh;
   width: 100%;
+}
+
+.project-head {
+  width: 100%;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-heading {
+  font-size: 3rem;
+  color: #425066;
 }
 
 /*project section styling end*/
