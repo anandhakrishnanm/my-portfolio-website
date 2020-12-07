@@ -31,7 +31,7 @@ body{
 .navbar{
     @include flex-align(space-between,center);
     height: 10vh;
-    background-color: #000;
+    background-color: $text-color-about;
     position: fixed;
     width: 100%;
 }
@@ -324,7 +324,7 @@ a.nav-link:before {
     
     }
     .navbar{
-        background: #000;
+        background: $text-color-about;
     }
   }
 /*about section styling end*/
@@ -341,5 +341,52 @@ a.nav-link:before {
 .project-heading{
     font-size: 3rem;
     color: $heading-text-color-about;
+}
+.project-grid-conatiner{
+    padding: 35px;
+    @include flex-align(flex-start,center );
+    flex-wrap: wrap;
+}
+.project-grid{
+    width: 35rem;
+    height: 40rem;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid $heading-text-color-about;
+    @include flex-align(flex-start,left );
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+.project-grid img{
+    width: 31rem;
+}
+.project-links{
+    @include flex-align(flex-start,center );
+}
+.project-info{
+    margin-top: 10px;
+}
+.project-info h3{
+    font-size: 2rem;
+}
+.project-info p{
+    font-size: 1.6rem;
+    margin: 10px auto;
+}
+.project-git, .project-web{
+    color: $heading-text-color-about;
+}
+.project-web{
+    margin-left: 10px;
+}
+@media screen and (max-width: 800px){
+    .project-grid{
+        margin-left: 0px;
+    }
+    .project-section{
+        padding-top: 75px;
+    }
 }
 /*project section styling end*/

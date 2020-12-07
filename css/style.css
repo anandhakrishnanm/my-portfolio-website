@@ -31,7 +31,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  background-color: #000;
+  background-color: #161616;
   position: fixed;
   width: 100%;
 }
@@ -456,7 +456,7 @@ a.nav-link:hover:before {
     padding-left: 5vw;
   }
   .navbar {
-    background: #000;
+    background: #161616;
   }
 }
 
@@ -484,6 +484,90 @@ a.nav-link:hover:before {
 .project-heading {
   font-size: 3rem;
   color: #425066;
+}
+
+.project-grid-conatiner {
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-grid {
+  width: 35rem;
+  height: 40rem;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #425066;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.project-grid img {
+  width: 31rem;
+}
+
+.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-info {
+  margin-top: 10px;
+}
+
+.project-info h3 {
+  font-size: 2rem;
+}
+
+.project-info p {
+  font-size: 1.6rem;
+  margin: 10px auto;
+}
+
+.project-git, .project-web {
+  color: #425066;
+}
+
+.project-web {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .project-grid {
+    margin-left: 0px;
+  }
+  .project-section {
+    padding-top: 75px;
+  }
 }
 
 /*project section styling end*/
