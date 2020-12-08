@@ -9,6 +9,7 @@ $text-color-about: #161616;
 $mob-welcome-text-faded-color: rgba(255, 255, 255, 0.8);
 $contact-button-color: rgb(5, 204, 81);
 $project-image-overlay-color: rgba(231, 226, 226, 0.5);
+$section-border-color: rgba(66,80,102,0.2);
 *{
     margin: 0px;
     padding: 0px;
@@ -131,6 +132,7 @@ a.nav-link:before {
     .navbar{
         height: 10vh;
         width: 100vw;
+        margin-top: 0px;
     }
     html{
         font-size: 9px;
@@ -341,6 +343,8 @@ a.nav-link:before {
 /*project section styling*/
 .project-section{
     width: 100%;
+    border-top: 5px solid $section-border-color;
+    border-bottom: 5px solid $section-border-color;
 }
 .project-head{
     width:100%;
@@ -421,7 +425,7 @@ a.nav-link:before {
     color: $heading-text-color-about;
 }
 .contact-box{
-    @include flex-align(space-evenly,center );
+    @include flex-align(space-evenly,flex-start );
     margin-top: 15px;
 }
 .contact-box .about-email{
@@ -430,6 +434,9 @@ a.nav-link:before {
 @media only screen and (max-width: 960px) {
     .contact-box{
         flex-direction: column;
+    }
+    .contact-box{
+        @include flex-align(center,center );
     }
 }
 /*Contact form style*/

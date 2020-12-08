@@ -170,6 +170,7 @@ a.nav-link:hover:before {
   .navbar {
     height: 10vh;
     width: 100vw;
+    margin-top: 0px;
   }
   html {
     font-size: 9px;
@@ -473,6 +474,8 @@ a.nav-link:hover:before {
 /*project section styling*/
 .project-section {
   width: 100%;
+  border-top: 5px solid rgba(66, 80, 102, 0.2);
+  border-bottom: 5px solid rgba(66, 80, 102, 0.2);
 }
 
 .project-head {
@@ -618,9 +621,9 @@ a.nav-link:hover:before {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 15px;
 }
 
@@ -634,6 +637,17 @@ a.nav-link:hover:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
