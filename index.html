@@ -179,25 +179,27 @@
                   <h2 class="contact-email"><a href="mailto:anandhakrishnanmohank@gmail.com">
                     anandhakrishnanmohank@gmail.com</a></h2>
                  </div>
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true">
                   <div class="clearfix">
-                    <input class="col2 first" type="text" placeholder="First Name">
-                    <input class="col2 last" type="text" placeholder="Last Name">
+                    <input class="col2 first" name="firstName" type="text" placeholder="First Name">
+                    <input class="col2 last" name="lastName" type="text" placeholder="Last Name">
                   </div>
                   <div class="clearfix">
-                    <input  class="col2 first" type="Email" placeholder="Email">
-                    <input class="col2 last" type="text" placeholder="Contact Number">
+                    <input  class="col2 first" name="email" type="Email" placeholder="Email">
+                    <input class="col2 last" name="mobile" type="text" placeholder="Contact Number">
                   </div>
                   <div class="clearfix">
-                    <textarea name="textarea" id="contact-textarea" cols="30" rows="7"
+                    <textarea name="message" id="contact-textarea" cols="30" rows="7"
                     placeholder=""> Your message here...
                   </textarea>
                   </div>
-                  <div class="clearfix"><input type="submit" value="Send"></div>
+                  <div data-netlify-recaptcha="true"></div>
+                  <div class="clearfix"><input name="submit" type="submit" value="Send"></div>
                 </form>
               </div>
             </div>
           </section>
+          <!--footer-->
           <footer class="footer">
             <div class="footer-social-presence">
               <a href="https://github.com/anandhakrishnanm" target="_blank">

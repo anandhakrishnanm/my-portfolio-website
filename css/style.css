@@ -777,6 +777,9 @@ span.collig {
     padding: 10px 30px;
     font-size: 14px;
   }
+  form {
+    width: 90vw;
+  }
 }
 
 /*contact form style end*/

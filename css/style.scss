@@ -562,7 +562,10 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	.contact-box input[type="submit"] {
 		padding: 10px 30px;
 		font-size: 14px;
-	}
+    }
+    form{
+        width: 90vw;
+    }
 }
 
 /*contact form style end*/
