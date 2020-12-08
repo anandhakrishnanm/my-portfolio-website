@@ -26,3 +26,6 @@ links.forEach(item => {
     });
         
     });
+    window.addEventListener('load',function(){
+      document.querySelector('body').classList.add("loaded")  
+    });
