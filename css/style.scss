@@ -8,6 +8,7 @@ $heading-text-color-about: #425066;
 $text-color-about: #161616;
 $mob-welcome-text-faded-color: rgba(255, 255, 255, 0.8);
 $contact-button-color: rgb(5, 204, 81);
+$project-image-overlay-color: rgba(231, 226, 226, 0.5);
 *{
     margin: 0px;
     padding: 0px;
@@ -235,6 +236,7 @@ a.nav-link:before {
 .about-section{
     height: 100vh;
     width: 100%;
+    padding-left: 35px;
     background: url('..//images/triangle-mosaic.png');
 }
 .about-heading{
@@ -351,29 +353,32 @@ a.nav-link:before {
 }
 .project-grid-conatiner{
     padding: 35px;
-    @include flex-align(flex-start,center );
+    @include flex-align(space-evenly,center );
     flex-wrap: wrap;
 }
 .project-grid{
     width: 35rem;
-    height: 40rem;
+    height: 39rem;
     border-radius: 10px;
-    padding: 15px;
-    border: 2px solid $heading-text-color-about;
+    // border: 2px solid $heading-text-color-about;
     @include flex-align(flex-start,left );
     flex-direction: column;
-    margin-left: 30px;
     margin-bottom: 30px;
+
 
 }
 .project-grid img{
-    width: 31rem;
+    width: 35rem;
+    height: 25rem;
+    object-fit: cover;
 }
 .project-links{
     @include flex-align(flex-start,center );
 }
 .project-info{
-    margin-top: 10px;
+    padding: 15px;
+    background: $project-image-overlay-color;
+    box-shadow: 0 8px 6px -6px black;
 }
 .project-info h3{
     font-size: 2rem;
@@ -389,6 +394,9 @@ a.nav-link:before {
     margin-left: 10px;
 }
 @media screen and (max-width: 800px){
+    .project-grid-conatiner{
+        justify-content: center;
+    }
     .project-grid{
         margin-left: 0px;
     }
@@ -402,7 +410,6 @@ a.nav-link:before {
 
 .contact-section{
     width: 100%;
-    height: 100vh;
 }
 .contact-head{
     width:100%;
@@ -414,11 +421,8 @@ a.nav-link:before {
     color: $heading-text-color-about;
 }
 .contact-box{
-    @include flex-align(center,center );
+    @include flex-align(space-evenly,center );
     margin-top: 15px;
-}
-.contact-form{
-    margin-left: 20px;
 }
 .contact-box .about-email{
     margin-bottom: 15px;
@@ -496,10 +500,14 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     margin: 7px 0;
 }
 .contact-box textarea {
-	width: 100%;
+    width: 100%;
+    margin-top: 5px;
 	display: block;
 	color: #666;
   resize:none;
+}
+#contact-textarea{
+    margin-top: 10px;
 }
 .contact-box input[type="submit"] {
 	padding: 15px 40px;
@@ -558,3 +566,24 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 
 /*contact form style end*/
+/* footer style */
+.footer{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background: $text-color-about;
+    color: $navbar-text-color;
+    @include flex-align(space-evenly,center );
+    flex-direction: column;
+}
+.footer h3{
+    font-size: 1.3rem;
+    padding: 7px;
+}
+.footer-social-presence{
+    @include flex-align(center,center )
+}
+.footer .i-git{
+    color: $navbar-text-color;
+}
+/* footer style end */
