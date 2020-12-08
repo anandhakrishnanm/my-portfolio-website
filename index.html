@@ -1,219 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anandhakrishnan M</title>
     <!--Linking CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!--Linking Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Linking JS-->
     <script src="js/index.js" defer></script>
-</head>
-<body id="body-tag">
+  </head>
+  <body id="body-tag">
     <div class="wrapper">
-        <div class="welcome-area">
-              <nav class="navbar">
-                <!-- logo -->
-                <a href="#" class="site-logo">&lt;AKM &#47;&gt;</a>
-        
-                <!--nav items -->
-                <ul class="nav-items" id="nav-list">
-                  <li class="nav-item "><a class="nav-link" href="#home">Home</a></li>
-                  <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
-                  <li class="nav-item "><a class="nav-link" href="#projects">Project</a></li>
-                  <li class="nav-item "><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-        
-                <!-- nav-toggler for mobile version only -->
-                <div class="menu-btn" id="menuBtn">
-                  <div class="menu-btn__burger"></div>
-                </div>
-              </nav>
-              <!-- navbar-area end -->
-              <div class="welcome-box" id="home">
-                <div class="welcome-text">
-                  <p class="welcome-word">Hi All, I'm</p>
-                  <p class="welcome-name">Anandhakrishnan M</p>
-                  <p class="welcome-job">Web Developer</p>
-                  <button class="cv-btn" onclick="window.open('./doc/resume.pdf')">
-                    Download CV
-                  </button>
-                </div>
-            </div>
-          </div>
-          
-          <!--About section-->
-          <section class="about-section section" id="about">
-             
-             <div class="about-content">
-               <div class="img-div">
-                 <img class="dev-image" src="./images/my-pic.jpeg" alt="anandhakrishnan image">
-               </div>
-               <div class="about-text-div">
-                 <p class="about-intro">I'm Anandhakrishnan M</p>
-                 <p class="about-job">A Web Developer</p>
-                 <p class="about-info">
-                  I'm a student developer based in Kerala, India with passion for development.
-                   I specialize in Web Development.
-                 </p>
-                 <div class="about-phone">
-                  <i class="fa fa-phone fa-3x"></i> <h2 class="contact-mob">
-                    <a href="tel:+919496961783">+919496961783</a>
-                  </h2>
-                 </div>
-                 <div class="about-email">
-                  <i class="fa fa-envelope fa-3x"></i>
-                  <h2 class="contact-email"><a href="mailto:anandhakrishnanmohank@gmail.com">
-                    anandhakrishnanmohank@gmail.com</a></h2>
-                 </div>
-                 <div class="my-social-presence">
-                  <a href="https://github.com/anandhakrishnanm" target="_blank">
-                      <i class="fa fa-github social-i fa-4x i-git"></i>
-                  </a>
-                  <a href="https://in.linkedin.com/in/anandhakrishnan-m-864193175" target="_blank">
-                      <i class="fa fa-linkedin social-i fa-4x i-linked-in"></i>
-                  </a>
-                  <a href="https://twitter.com/iam_anandha" target="_blank">
-                      <i class="fa fa-twitter social-i fa-4x i-twitter"></i>
-                  </a>
-              </div>
-               </div>
-             </div>
-          </section>
-          <!--About section end-->
-          <!--Project Section start-->
-          <section class="project-section section" id="projects">
-              <div class="project-head">
-                <h2 class="project-heading">My Projects</h2>
-              </div>
-             <div class="project-grid-conatiner">
-               <!--Personal portfolio-->
-              <div class="project-grid">
-                <img src="images/pfw.png" alt="portfolio website">
-                <div class="project-info">
-                  <h3>Personal portfolio</h3>
-                  <p>My personal portfolio website</p>
-                  <div class="project-links">
-                    <a href="https://github.com/anandhakrishnanm/my-portfolio-website" target="_blank">
-                      <i class="fa fa-github project-git fa-3x"></i>
-                  </a>
-                  <a href="#" target="_blank">
-                    <i class="fa fa-link project-web fa-3x"></i>
-                </a>
-                  </div>
-                </div>
-              </div>
-              <!--JS documenation page-->
-              <div class="project-grid">
-                <img src="images/jsdp.png" alt="website image">
-                <div class="project-info">
-                  <h3>JS Documentation Page</h3>
-                  <p>An unofficial documentation of JavaScript</p>
-                  <div class="project-links">
-                    <a href="https://github.com/anandhakrishnanm/js-documentation-page" target="_blank">
-                      <i class="fa fa-github project-git fa-3x"></i>
-                  </a>
-                  <a href="https://js-documentation-page.netlify.app/" target="_blank">
-                    <i class="fa fa-link project-web fa-3x"></i>
-                </a>
-                  </div>
-                </div>
-              </div>
-              <!--JS calculator-->
-              <div class="project-grid">
-                <img src="images/sjsc.png" alt="website image">
-                <div class="project-info">
-                  <h3>JS Calculator </h3>
-                  <p>A simple JS calculator</p>
-                  <div class="project-links">
-                    <a href="https://github.com/anandhakrishnanm/simple-js-calculator" target="_blank">
-                      <i class="fa fa-github project-git fa-3x"></i>
-                  </a>
-                  <a href="https://anandhakrishnanm.github.io/simple-js-calculator/" target="_blank">
-                    <i class="fa fa-link project-web fa-3x"></i>
-                </a>
-                  </div>
-                </div>
-              </div>
-              <!--project grid-->
-              <div class="project-grid">
-                <img src="images/random.png" alt="portfolio website">
-                <div class="project-info">
-                  <h3>Random Quote Generator</h3>
-                  <p>A simple webpage that displays famous quotes</p>
-                  <div class="project-links">
-                    <a href="https://github.com/anandhakrishnanm/random-quote-generator" target="_blank">
-                      <i class="fa fa-github project-git fa-3x"></i>
-                  </a>
-                  <a href="https://read-random-quote.netlify.app/" target="_blank">
-                    <i class="fa fa-link project-web fa-3x"></i>
-                </a>
-                  </div>
-                </div>
-              </div>
-             </div>
-        
-          </section>
+      <div class="welcome-area">
+        <nav class="navbar">
+          <!-- logo -->
+          <a href="#" class="site-logo">&lt;AKM &#47;&gt;</a>
 
-          <!--Contact Section-->
-          <section class="contact-section section" id="contact">
-            <div class="contact-head">
-              <h2 class="contact-heading">Contact Me</h2>
+          <!--nav items -->
+          <ul class="nav-items" id="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- nav-toggler for mobile version only -->
+          <div class="menu-btn" id="menuBtn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </nav>
+        <!-- navbar-area end -->
+        <div class="welcome-box" id="home">
+          <div class="welcome-text">
+            <p class="welcome-word">Hi All, I'm</p>
+            <p class="welcome-name">Anandhakrishnan M</p>
+            <p class="welcome-job">Web Developer</p>
+            <button class="cv-btn" onclick="window.open('./doc/resume.pdf')">
+              Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--About section-->
+      <section class="about-section section" id="about">
+        <div class="about-content">
+          <div class="img-div">
+            <img
+              class="dev-image"
+              src="./images/my-pic.jpeg"
+              alt="anandhakrishnan image"
+            />
+          </div>
+          <div class="about-text-div">
+            <p class="about-intro">I'm Anandhakrishnan M</p>
+            <p class="about-job">A Web Developer</p>
+            <p class="about-info">
+              I'm a student developer based in Kerala, India with passion for
+              development. I specialize in Web Development.
+            </p>
+            <div class="about-phone">
+              <i class="fa fa-phone fa-3x"></i>
+              <h2 class="contact-mob">
+                <a href="tel:+919496961783">+919496961783</a>
+              </h2>
             </div>
-            <div class="contact-box">
-              <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.12947565779!2d76.31946291479157!3d9.669976893077894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNDAnMTEuOSJOIDc2wrAxOScxOC4wIkU!5e0!3m2!1sen!2sin!4v1607403073643!5m2!1sen!2sin" 
-                width="600" class="g-map" height="450" frameborder="0" style="border:0;" 
-                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-              </div>
-              <div class="contact-form">
-                <div class="about-phone">
-                  <i class="fa fa-phone fa-3x"></i> <h2 class="contact-mob">
-                    <a href="tel:+919496961783">+919496961783</a>
-                  </h2>
-                 </div>
-                 <div class="about-email">
-                  <i class="fa fa-envelope fa-3x"></i>
-                  <h2 class="contact-email"><a href="mailto:anandhakrishnanmohank@gmail.com">
-                    anandhakrishnanmohank@gmail.com</a></h2>
-                 </div>
-                <form name="contact" method="POST" data-netlify="true">
-                  <div class="clearfix">
-                    <input class="col2 first" name="firstName" type="text" placeholder="First Name">
-                    <input class="col2 last" name="lastName" type="text" placeholder="Last Name">
-                  </div>
-                  <div class="clearfix">
-                    <input  class="col2 first" name="email" type="Email" placeholder="Email">
-                    <input class="col2 last" name="mobile" type="text" placeholder="Contact Number">
-                  </div>
-                  <div class="clearfix">
-                    <textarea name="message" id="contact-textarea" cols="30" rows="7"
-                    placeholder=""> Your message here...
-                  </textarea>
-                  </div>
-                  <div data-netlify-recaptcha="true"></div>
-                  <div class="clearfix"><input name="submit" type="submit" value="Send"></div>
-                </form>
-              </div>
+            <div class="about-email">
+              <i class="fa fa-envelope fa-3x"></i>
+              <h2 class="contact-email">
+                <a href="mailto:anandhakrishnanmohank@gmail.com">
+                  anandhakrishnanmohank@gmail.com</a
+                >
+              </h2>
             </div>
-          </section>
-          <!--footer-->
-          <footer class="footer">
-            <div class="footer-social-presence">
+            <div class="my-social-presence">
               <a href="https://github.com/anandhakrishnanm" target="_blank">
-                  <i class="fa fa-github social-i fa-4x i-git"></i>
+                <i class="fa fa-github social-i fa-4x i-git"></i>
               </a>
-              <a href="https://in.linkedin.com/in/anandhakrishnan-m-864193175" target="_blank">
-                  <i class="fa fa-linkedin social-i fa-4x i-linked-in"></i>
+              <a
+                href="https://in.linkedin.com/in/anandhakrishnan-m-864193175"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin social-i fa-4x i-linked-in"></i>
               </a>
               <a href="https://twitter.com/iam_anandha" target="_blank">
-                  <i class="fa fa-twitter social-i fa-4x i-twitter"></i>
+                <i class="fa fa-twitter social-i fa-4x i-twitter"></i>
               </a>
             </div>
-                <h3>&copy; Anandhakrishnan M</h3>
-          </footer>
+          </div>
+        </div>
+      </section>
+      <!--About section end-->
+      <!--Project Section start-->
+      <section class="project-section section" id="projects">
+        <div class="project-head">
+          <h2 class="project-heading">My Projects</h2>
+        </div>
+        <div class="project-grid-conatiner">
+          <!--Personal portfolio-->
+          <div class="project-grid">
+            <img src="images/pfw.png" alt="portfolio website" />
+            <div class="project-info">
+              <h3>Personal portfolio</h3>
+              <p>My personal portfolio website</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/anandhakrishnanm/my-portfolio-website"
+                  target="_blank"
+                >
+                  <i class="fa fa-github project-git fa-3x"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa fa-link project-web fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--JS documenation page-->
+          <div class="project-grid">
+            <img src="images/jsdp.png" alt="website image" />
+            <div class="project-info">
+              <h3>JS Documentation Page</h3>
+              <p>An unofficial documentation of JavaScript</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/anandhakrishnanm/js-documentation-page"
+                  target="_blank"
+                >
+                  <i class="fa fa-github project-git fa-3x"></i>
+                </a>
+                <a
+                  href="https://js-documentation-page.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fa fa-link project-web fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--JS calculator-->
+          <div class="project-grid">
+            <img src="images/sjsc.png" alt="website image" />
+            <div class="project-info">
+              <h3>JS Calculator</h3>
+              <p>A simple JS calculator</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/anandhakrishnanm/simple-js-calculator"
+                  target="_blank"
+                >
+                  <i class="fa fa-github project-git fa-3x"></i>
+                </a>
+                <a
+                  href="https://anandhakrishnanm.github.io/simple-js-calculator/"
+                  target="_blank"
+                >
+                  <i class="fa fa-link project-web fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--project grid-->
+          <div class="project-grid">
+            <img src="images/random.png" alt="portfolio website" />
+            <div class="project-info">
+              <h3>Random Quote Generator</h3>
+              <p>A simple webpage that displays famous quotes</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/anandhakrishnanm/random-quote-generator"
+                  target="_blank"
+                >
+                  <i class="fa fa-github project-git fa-3x"></i>
+                </a>
+                <a
+                  href="https://read-random-quote.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fa fa-link project-web fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+      <section class="contact-section section" id="contact">
+        <div class="contact-head">
+          <h2 class="contact-heading">Contact Me</h2>
+        </div>
+        <div class="contact-box">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.12947565779!2d76.31946291479157!3d9.669976893077894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNDAnMTEuOSJOIDc2wrAxOScxOC4wIkU!5e0!3m2!1sen!2sin!4v1607403073643!5m2!1sen!2sin"
+              width="600"
+              class="g-map"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="contact-form">
+            <div class="about-phone">
+              <i class="fa fa-phone fa-3x"></i>
+              <h2 class="contact-mob">
+                <a href="tel:+919496961783">+919496961783</a>
+              </h2>
+            </div>
+            <div class="about-email">
+              <i class="fa fa-envelope fa-3x"></i>
+              <h2 class="contact-email">
+                <a href="mailto:anandhakrishnanmohank@gmail.com">
+                  anandhakrishnanmohank@gmail.com</a
+                >
+              </h2>
+            </div>
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="clearfix">
+                <input
+                  class="col2 first"
+                  name="firstName"
+                  type="text"
+                  placeholder="First Name"
+                />
+                <input
+                  class="col2 last"
+                  name="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="clearfix">
+                <input
+                  class="col2 first"
+                  name="email"
+                  type="Email"
+                  placeholder="Email"
+                />
+                <input
+                  class="col2 last"
+                  name="mobile"
+                  type="text"
+                  placeholder="Contact Number"
+                />
+              </div>
+              <div class="clearfix">
+                <textarea
+                  name="message"
+                  id="contact-textarea"
+                  cols="30"
+                  rows="7"
+                  placeholder=""
+                >
+ Your message here...
+                  </textarea
+                >
+              </div>
+              <div data-netlify-recaptcha="true"></div>
+              <div class="clearfix">
+                <input name="submit" type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="footer">
+        <div class="footer-social-presence">
+          <a href="https://github.com/anandhakrishnanm" target="_blank">
+            <i class="fa fa-github social-i fa-4x i-git"></i>
+          </a>
+          <a
+            href="https://in.linkedin.com/in/anandhakrishnan-m-864193175"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin social-i fa-4x i-linked-in"></i>
+          </a>
+          <a href="https://twitter.com/iam_anandha" target="_blank">
+            <i class="fa fa-twitter social-i fa-4x i-twitter"></i>
+          </a>
+        </div>
+        <h3>&copy; Anandhakrishnan M</h3>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

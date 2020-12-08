@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .section {
@@ -108,8 +108,8 @@ a.nav-link:hover:before {
   height: 40px;
   margin-right: 20px;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   /* border: 3px solid #fff; */
 }
 
@@ -120,13 +120,13 @@ a.nav-link:hover:before {
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before,
 .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 40px;
   height: 4px;
@@ -134,8 +134,8 @@ a.nav-link:hover:before {
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -202,8 +202,8 @@ a.nav-link:hover:before {
     background: #000;
     margin: 0;
     padding: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .nav-items li a {
     display: none;
@@ -355,7 +355,8 @@ a.nav-link:hover:before {
   margin-top: 10px;
 }
 
-.about-phone, .about-email {
+.about-phone,
+.about-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +369,8 @@ a.nav-link:hover:before {
   margin-top: 10px;
 }
 
-.contact-mob, .contact-email {
+.contact-mob,
+.contact-email {
   margin-left: 20px;
   font-size: 1.8rem;
   color: #425066;
@@ -397,11 +399,14 @@ a.nav-link:hover:before {
           align-items: center;
 }
 
-.i-git, .i-linked-in, .i-twitter {
+.i-git,
+.i-linked-in,
+.i-twitter {
   color: #425066;
 }
 
-.i-linked-in, .i-twitter {
+.i-linked-in,
+.i-twitter {
   margin-left: 15px;
 }
 
@@ -422,11 +427,11 @@ a.nav-link:hover:before {
 }
 
 .i-linked-in {
-  color: #0E76A8;
+  color: #0e76a8;
 }
 
 .i-twitter {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 @media screen and (max-width: 1100px) {
@@ -451,7 +456,7 @@ a.nav-link:hover:before {
             align-items: center;
   }
   .dev-image {
-    width: 85vw;
+    width: 45vw;
   }
   .section {
     padding: 15vh 6px;
@@ -467,6 +472,18 @@ a.nav-link:hover:before {
   }
   .navbar {
     background: #161616;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dev-image {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dev-image {
+    width: 85vw;
   }
 }
 
@@ -567,7 +584,8 @@ a.nav-link:hover:before {
   margin: 10px auto;
 }
 
-.project-git, .project-web {
+.project-git,
+.project-web {
   color: #425066;
 }
 
@@ -652,7 +670,10 @@ a.nav-link:hover:before {
 }
 
 /*Contact form style*/
-input:focus, textarea:focus, keygen:focus, select:focus {
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
   outline: none;
 }
 
@@ -723,7 +744,7 @@ span.collig {
 .contact-box textarea {
   padding: 18px;
   border: 0;
-  background: #EDEDED;
+  background: #ededed;
   margin: 7px 0;
 }
 
@@ -783,7 +804,9 @@ span.collig {
   .contact-box h3 {
     font-size: 16px;
   }
-  .contact-box input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+  .contact-box input[type="text"],
+  .section2 .sec2contactform input[type="email"],
+  .section2 .sec2contactform textarea {
     padding: 10px;
     margin: 3px 0;
   }
