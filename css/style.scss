@@ -383,7 +383,9 @@ a.nav-link:hover:before {
   @include flex-align(flex-start, left);
   flex-direction: column;
   margin-bottom: 30px;
-  box-shadow: 4px 3px 3px 3px $footer-ruler-color;
+  box-shadow:
+  0  5px 10px rgba(154,160,185,0.05),
+  0 15px 40px rgba(166,173,201,0.2);
 }
 .project-grid img {
   width: 35rem;
@@ -518,11 +520,11 @@ span.collig {
   padding: 18px;
   border: 0;
   background: #ededed;
-  margin: 7px 0;
+  margin: 10px 0;
 }
 .contact-box textarea {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
   display: block;
   color: #666;
   resize: none;
@@ -553,6 +555,10 @@ span.collig {
   }
 }
 @media only screen and (max-width: 960px) {
+  
+  .contact-form-mob{
+    margin-bottom: 10px;
+  }
   .g-map {
     width: 90vw;
   }
@@ -578,10 +584,13 @@ span.collig {
     font-size: 16px;
   }
   .contact-box input[type="text"],
-  .section2 .sec2contactform input[type="email"],
-  .section2 .sec2contactform textarea {
+  .contact-box input[type="email"]
+   {
     padding: 10px;
-    margin: 3px 0;
+    margin: 10px 0;
+  }
+  #contact-textarea{
+    margin-top: 10px;
   }
   .contact-box input[type="submit"] {
     padding: 10px 30px;
