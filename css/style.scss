@@ -8,7 +8,7 @@ $heading-text-color-about: #425066;
 $text-color-about: #161616;
 $mob-welcome-text-faded-color: rgba(255, 255, 255, 0.8);
 $contact-button-color: rgb(5, 204, 81);
-$project-image-overlay-color: rgba(231, 226, 226, 0.5);
+$project-image-overlay-color: rgba(255, 255, 255, 0.7);
 $section-border-color: rgba(66, 80, 102, 0.2);
 $footer-ruler-color: rgba(197, 203, 211, 0.5);
 * {
@@ -86,7 +86,7 @@ a.nav-link:hover:before {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  width: 40px;
   height: 40px;
   margin-right: 20px;
   cursor: pointer;
@@ -113,10 +113,10 @@ a.nav-link:hover:before {
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
-  transform: translateY(-16px);
+  transform: translateY(-12px);
 }
 .menu-btn__burger::after {
-  transform: translateY(16px);
+  transform: translateY(12px);
 }
 .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
@@ -131,7 +131,7 @@ a.nav-link:hover:before {
 }
 @media screen and (max-width: 1100px) {
   .navbar {
-    height: 10vh;
+    height: 7.5vh;
     width: 100vw;
     margin-top: 0px;
   }
@@ -146,7 +146,7 @@ a.nav-link:hover:before {
     @include flex-align(center, center);
     flex-direction: column;
     height: 100vh;
-    top: 10vh;
+    top: 7.5vh;
     left: 0;
     width: 0;
     background: #000;
@@ -344,6 +344,9 @@ a.nav-link:hover:before {
   }
 }
 @media screen and (max-width: 800px) {
+  .section {
+    padding-top: 9vh;
+  }
   .dev-image {
     width: 60vw;
   }
@@ -380,6 +383,7 @@ a.nav-link:hover:before {
   @include flex-align(flex-start, left);
   flex-direction: column;
   margin-bottom: 30px;
+  box-shadow: 4px 3px 3px 3px $footer-ruler-color;
 }
 .project-grid img {
   width: 35rem;
@@ -392,7 +396,6 @@ a.nav-link:hover:before {
 .project-info {
   padding: 15px;
   background: $project-image-overlay-color;
-  box-shadow: 0 8px 6px -6px black;
 }
 .project-info h3 {
   font-size: 2rem;
@@ -416,7 +419,7 @@ a.nav-link:hover:before {
     margin-left: 0px;
   }
   .project-section {
-    padding-top: 75px;
+    padding-top: 7vh;
   }
 }
 /*project section styling end*/
@@ -538,9 +541,11 @@ span.collig {
   cursor: pointer;
 }
 
-/* @media querries */
 
 @media only screen and (max-width: 1266px) {
+  .contact-section{
+    padding-top: 7vh;
+  }
   .section2 {
     width: 100%;
   }
