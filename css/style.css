@@ -767,11 +767,14 @@ span.collig {
   padding: 15px 40px;
   color: #fff;
   border: 0;
+  border-radius: 5px;
   background: #05cc51;
   font-size: 16px;
   text-transform: uppercase;
   margin: 7px 0;
   cursor: pointer;
+  -webkit-box-shadow: 1.5px 2px 2px 2px rgba(197, 203, 211, 0.5);
+          box-shadow: 1.5px 2px 2px 2px rgba(197, 203, 211, 0.5);
 }
 
 @media only screen and (max-width: 1266px) {
@@ -904,10 +907,10 @@ span.collig {
   height: 150px;
   margin: -75px 0 0 -75px;
   border: 3px solid transparent;
-  border-top-color: white;
+  border-top-color: orange;
   border-radius: 100%;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2.5s linear infinite;
+  animation: spin 2.5s linear infinite;
   z-index: 1001;
 }
 
@@ -919,10 +922,10 @@ span.collig {
   right: 5px;
   bottom: 5px;
   border: 3px solid transparent;
-  border-top-color: yellow;
+  border-top-color: white;
   border-radius: 100%;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3.7s linear infinite;
+  animation: spin 3.7s linear infinite;
 }
 
 #loader:after {
@@ -933,10 +936,10 @@ span.collig {
   right: 12px;
   bottom: 12px;
   border: 3px solid transparent;
-  border-top-color: orange;
+  border-top-color: green;
   border-radius: 100%;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 3.4s linear infinite;
+  animation: spin 3.4s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -964,7 +967,7 @@ span.collig {
 #loader-wrapper .loader-section {
   position: fixed;
   top: 0;
-  background: #333;
+  background: #cdd3d8;
   width: 51%;
   height: 100%;
   z-index: 1000;
