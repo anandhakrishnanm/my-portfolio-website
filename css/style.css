@@ -306,7 +306,7 @@ a.nav-link:hover:before {
 /*welcome area styling end*/
 /*about section style*/
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding-left: 4.8vw;
   background: url("..//images/triangle-mosaic.png");
@@ -753,14 +753,13 @@ span.collig {
 
 .contact-box textarea {
   width: 100%;
-  margin-top: 10px;
   display: block;
   color: #666;
   resize: none;
 }
 
 #contact-textarea {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .contact-box input[type="submit"] {
@@ -821,7 +820,7 @@ span.collig {
     margin: 10px 0;
   }
   #contact-textarea {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .contact-box input[type="submit"] {
     padding: 10px 30px;
@@ -836,8 +835,7 @@ span.collig {
 /* footer style */
 .footer {
   width: 100%;
-  padding: 20px 0px;
-  margin-top: 20px;
+  padding: 20px 20px;
   background: #161616;
   color: #fff;
   display: -webkit-box;
@@ -880,6 +878,7 @@ span.collig {
   width: 100%;
   height: 2px;
   background: rgba(197, 203, 211, 0.5);
+  border-radius: 20px;
   margin: 8px auto;
 }
 
