@@ -4,13 +4,14 @@ $navbar-text-underline-color: gold;
 $welcome-area-bg-image-overlay-color: rgba(0, 0, 0, 0.6);
 $cv-btn-hover-color: rgb(255, 147, 6);
 $about-section-background-color: rgb(177, 177, 177);
-$heading-text-color-about: #425066;
+$section-heading-color: #425066;
 $text-color-about: #161616;
 $mob-welcome-text-faded-color: rgba(255, 255, 255, 0.8);
 $contact-button-color: rgb(5, 204, 81);
 $project-image-overlay-color: rgba(255, 255, 255, 0.7);
 $section-border-color: rgba(66, 80, 102, 0.2);
 $footer-ruler-color: rgba(197, 203, 211, 0.5);
+$heading-color-about: #18191a;
 * {
   margin: 0px;
   padding: 0px;
@@ -24,7 +25,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .section {
-  padding-top: 15vh;
+  padding: 12vh 10px 0px 30px;
 }
 @mixin flex-align($jc, $ai) {
   display: flex;
@@ -39,6 +40,11 @@ body {
   position: fixed;
   width: 100%;
 }
+.logo{
+  width: 3rem;
+  height: 4rem;
+  object-fit: cover;
+}
 .navbar a {
   text-decoration: none;
   color: $navbar-text-color;
@@ -51,7 +57,7 @@ body {
 .nav-items {
   @include flex-align(space-between, center);
   width: 30vw;
-  margin-right: 5.5vw;
+  margin-right: 6.2vw;
 }
 .nav-link {
   position: relative;
@@ -79,7 +85,7 @@ a.nav-link:hover:before {
   list-style: none;
 }
 .site-logo {
-  margin-left: 5.5vw;
+  margin-left: 6.2vw;
 }
 
 .menu-btn {
@@ -139,6 +145,7 @@ a.nav-link:hover:before {
   .site-logo {
     margin-left: 20px;
   }
+ 
   html {
     font-size: 9px;
   }
@@ -244,119 +251,78 @@ a.nav-link:hover:before {
 }
 /*welcome area styling end*/
 /*about section style*/
-.about-section {
+.about-section{
   min-height: 100vh;
+}
+.about-content{
+  @include flex-align(center,flex-start);
   width: 100%;
-  padding-left: 4.8vw;
-  background: url("..//images/triangle-mosaic.png");
 }
-.about-heading {
-  margin-bottom: 40px;
-  font-size: 3.5rem;
-  color: $heading-text-color-about;
-}
+
 .dev-image {
-  width: 50rem;
-  margin-left: 30px;
-  border-radius: 20px;
+  width: 40rem;
 }
-.about-content {
-  @include flex-align(flex-start, center);
-}
-.about-text-div {
-  padding-left: 60px;
-  color: $text-color-about;
-  width: 55rem;
-}
-.about-intro {
-  font-size: 3rem;
-}
-.about-job {
-  font-size: 2.8rem;
-}
-.about-info {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-.about-phone,
-.about-email {
-  @include flex-align(flex-start, center);
-  margin-top: 10px;
-}
-.contact-mob,
-.contact-email {
+.about-text-div{
   margin-left: 20px;
+  width: 55vw;
+  text-align: justify;
+}
+.about-text-head{
+  @include flex-align(center,center );
+  margin-top: 20px;
+}
+.about-text-head h2{
+  font-size: 3.5rem;
+  color: $heading-color-about;
+}
+.about-my-skill-head{
+  @include flex-align(center,center );
+  margin-top: 30px;
+}
+.about-my-skill-head h2{
+  font-size: 3rem;
+  color: $heading-color-about;
+}
+.about-text-div p{
+  margin-top: 15px;
   font-size: 1.8rem;
-  color: $heading-text-color-about;
+  color: $text-color-about;
 }
-.contact-email a {
-  color: $heading-text-color-about;
-  text-decoration: none;
+.skill-image-div{
+  width: 100%;
+  @include flex-align(center,center);
 }
-.contact-mob a {
-  color: $heading-text-color-about;
-  text-decoration: none;
-}
-.my-social-presence {
-  margin-top: 12px;
-  @include flex-align(flex-start, center);
-}
-.i-git,
-.i-linked-in,
-.i-twitter {
-  color: $heading-text-color-about;
-}
-.i-linked-in,
-.i-twitter {
-  margin-left: 15px;
-}
-.about-head-box {
-  @include flex-align(flex-start, center);
-}
-.i-git {
-  color: #333;
-}
-.i-linked-in {
-  color: #0e76a8;
-}
-.i-twitter {
-  color: #1da1f2;
+.skill-image{
+  width: 60rem;
 }
 @media screen and (max-width: 1100px) {
-  .about-content {
-    flex-direction: column;
-  }
-  .about-section {
-    height: auto;
-  }
-  .about-head-box {
-    @include flex-align(flex-start, center);
-  }
-  .dev-image {
-    width: 45vw;
-  }
-  .section {
-    padding: 15vh 6px;
+  .about-section{
+    padding-left: 0px;
     margin-left: 0px;
   }
   .dev-image {
-    margin: 0;
+    width: 40vw;
   }
-  .about-text-div {
-    width: 95vw;
-    margin-top: 20px;
-    padding-left: 5vw;
+  .about-content{
+    @include flex-align(center,center );
+    flex-direction: column;
   }
-  .navbar {
-    background: $text-color-about;
+  .about-text-div{
+    width: 70%;
   }
+  
 }
 @media screen and (max-width: 800px) {
-  .section {
-    padding-top: 9vh;
-  }
+
   .dev-image {
     width: 60vw;
+  }
+  .about-text-div{
+    width: 90%;
+    margin-left: 0px;
+  }
+  .skill-image{
+    width: 80vw;
   }
 }
 @media screen and (max-width: 600px) {
@@ -378,7 +344,7 @@ a.nav-link:hover:before {
 }
 .project-heading {
   font-size: 3rem;
-  color: $heading-text-color-about;
+  color: $section-heading-color;
 }
 .project-grid-conatiner {
   padding: 35px;
@@ -416,7 +382,7 @@ a.nav-link:hover:before {
 }
 .project-git,
 .project-web {
-  color: $heading-text-color-about;
+  color: $section-heading-color;
 }
 .project-web {
   margin-left: 10px;
@@ -434,7 +400,17 @@ a.nav-link:hover:before {
 }
 /*project section styling end*/
 /*Contact section styling*/
-
+.phone-div, .email-div{
+  @include flex-align(flex-start,center);
+}
+.contact-email, .contact-mob{
+  margin-left: 20px;
+}
+.contact-email a, .contact-mob a{
+  color: $section-heading-color;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
 .contact-section {
   width: 100%;
 }
@@ -445,7 +421,7 @@ a.nav-link:hover:before {
 }
 .contact-heading {
   font-size: 3rem;
-  color: $heading-text-color-about;
+  color: $section-heading-color;
 }
 .contact-box {
   @include flex-align(space-evenly, flex-start);
@@ -629,7 +605,7 @@ span.collig {
 }
 .footer-ruler{
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: $footer-ruler-color;
   border-radius: 20px;
   margin: 20px 0px;
@@ -641,6 +617,14 @@ span.collig {
 }
 .up-link:hover{
   color: $navbar-text-underline-color;
+}
+.i-linked-in {
+  color: #0e76a8;
+  margin-left: 20px;
+}
+.i-twitter {
+  color: #1da1f2;
+  margin-left: 20px;
 }
 
 /* footer style end */

@@ -16,7 +16,7 @@ body {
 }
 
 .section {
-  padding-top: 15vh;
+  padding: 12vh 10px 0px 30px;
 }
 
 /*Nav bar styling*/
@@ -34,6 +34,13 @@ body {
   background-color: #161616;
   position: fixed;
   width: 100%;
+}
+
+.logo {
+  width: 3rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar a {
@@ -58,7 +65,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 30vw;
-  margin-right: 5.5vw;
+  margin-right: 6.2vw;
 }
 
 .nav-link {
@@ -93,7 +100,7 @@ a.nav-link:hover:before {
 }
 
 .site-logo {
-  margin-left: 5.5vw;
+  margin-left: 6.2vw;
 }
 
 .menu-btn {
@@ -314,180 +321,128 @@ a.nav-link:hover:before {
 /*about section style*/
 .about-section {
   min-height: 100vh;
-  width: 100%;
-  padding-left: 4.8vw;
-  background: url("..//images/triangle-mosaic.png");
-}
-
-.about-heading {
-  margin-bottom: 40px;
-  font-size: 3.5rem;
-  color: #425066;
-}
-
-.dev-image {
-  width: 50rem;
-  margin-left: 30px;
-  border-radius: 20px;
 }
 
 .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.dev-image {
+  width: 40rem;
 }
 
 .about-text-div {
-  padding-left: 60px;
-  color: #161616;
-  width: 55rem;
-}
-
-.about-intro {
-  font-size: 3rem;
-}
-
-.about-job {
-  font-size: 2.8rem;
-}
-
-.about-info {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.about-phone,
-.about-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 10px;
-}
-
-.contact-mob,
-.contact-email {
   margin-left: 20px;
+  width: 55vw;
+  text-align: justify;
+}
+
+.about-text-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.about-text-head h2 {
+  font-size: 3.5rem;
+  color: #18191a;
+}
+
+.about-my-skill-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.about-my-skill-head h2 {
+  font-size: 3rem;
+  color: #18191a;
+}
+
+.about-text-div p {
+  margin-top: 15px;
   font-size: 1.8rem;
-  color: #425066;
+  color: #161616;
 }
 
-.contact-email a {
-  color: #425066;
-  text-decoration: none;
-}
-
-.contact-mob a {
-  color: #425066;
-  text-decoration: none;
-}
-
-.my-social-presence {
-  margin-top: 12px;
+.skill-image-div {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.i-git,
-.i-linked-in,
-.i-twitter {
-  color: #425066;
-}
-
-.i-linked-in,
-.i-twitter {
-  margin-left: 15px;
-}
-
-.about-head-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.i-git {
-  color: #333;
-}
-
-.i-linked-in {
-  color: #0e76a8;
-}
-
-.i-twitter {
-  color: #1da1f2;
+.skill-image {
+  width: 60rem;
 }
 
 @media screen and (max-width: 1100px) {
+  .about-section {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .dev-image {
+    width: 40vw;
+  }
   .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-section {
-    height: auto;
-  }
-  .about-head-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .dev-image {
-    width: 45vw;
-  }
-  .section {
-    padding: 15vh 6px;
-    margin-left: 0px;
-  }
-  .dev-image {
-    margin: 0;
-  }
   .about-text-div {
-    width: 95vw;
-    margin-top: 20px;
-    padding-left: 5vw;
-  }
-  .navbar {
-    background: #161616;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .section {
-    padding-top: 9vh;
-  }
   .dev-image {
     width: 60vw;
+  }
+  .about-text-div {
+    width: 90%;
+    margin-left: 0px;
+  }
+  .skill-image {
+    width: 80vw;
   }
 }
 
@@ -618,6 +573,28 @@ a.nav-link:hover:before {
 
 /*project section styling end*/
 /*Contact section styling*/
+.phone-div, .email-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-email, .contact-mob {
+  margin-left: 20px;
+}
+
+.contact-email a, .contact-mob a {
+  color: #425066;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
 .contact-section {
   width: 100%;
 }
@@ -882,7 +859,7 @@ span.collig {
 
 .footer-ruler {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: rgba(197, 203, 211, 0.5);
   border-radius: 20px;
   margin: 20px 0px;
@@ -895,6 +872,16 @@ span.collig {
 
 .up-link:hover {
   color: gold;
+}
+
+.i-linked-in {
+  color: #0e76a8;
+  margin-left: 20px;
+}
+
+.i-twitter {
+  color: #1da1f2;
+  margin-left: 20px;
 }
 
 /* footer style end */
